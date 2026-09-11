@@ -1,0 +1,29 @@
+[
+  {
+    "file": "lodgiq.png",
+    "source": "https://lodgiq.com/wp-content/uploads/2016/02/lodg-i-q-logo-horizontal.png"
+  },
+  {
+    "file": "third-wave.png",
+    "source": "https://www.thirdwavecoffeeroasters.com/cdn/shop/files/TWC_logo_without_R-01.png?v=1695243143"
+  },
+  {
+    "file": "netflix.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "netflix"
+  },
+  {
+    "file": "airbnb.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "airbnb"
+  },
+  {
+    "file": "spotify.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "spotify"
+  },
+  {
+    "file": "uber.svg",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@14.11.0/icons/uber.svg"
+  }
+]

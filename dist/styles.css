@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root { color-scheme: dark; --an-black:#171715; --an-charcoal:#20201d; --an-cream:#f1ecdf; --an-beige:#d8cfba; --an-orange:#dc7b4e; --an-muted:#b9b7ae; --an-line:rgba(241,236,223,.16); --an-font:'DM Sans',Arial,sans-serif; --an-serif:'Instrument Serif',Georgia,serif; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:32px; }
+body { margin:0; background:var(--an-black); }
+#anamika-portfolio { background:var(--an-black); color:var(--an-cream); font-family:var(--an-font); font-size:16px; line-height:1.6; overflow:clip; -webkit-font-smoothing:antialiased; }
+#anamika-portfolio ::selection { background:var(--an-orange); color:var(--an-black); }
+#anamika-portfolio :where(h1,h2,h3,p,figure) { margin:0; }
+#anamika-portfolio :where(a,button) { -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
+#anamika-portfolio a { color:inherit; text-decoration:none; }
+#anamika-portfolio button { font:inherit; cursor:pointer; color:inherit; }
+#anamika-portfolio button:not(.action) { background:none; border:0; }
+#anamika-portfolio :where(a,button):focus-visible { outline:3px solid var(--an-orange); outline-offset:6px; }
+#anamika-portfolio img { display:block; max-width:100%; }
+#anamika-portfolio [hidden] { display:none!important; }
+#anamika-portfolio .wrap { width:calc(100% - 112px); max-width:1328px; margin-inline:auto; }
+#anamika-portfolio .section-pad { padding-block:112px; }
+#anamika-portfolio .eyebrow { font-size:12px; font-weight:600; letter-spacing:.15em; line-height:1.6; }
+#anamika-portfolio .orange { color:var(--an-orange); }
+#anamika-portfolio .serif { font-family:var(--an-serif); font-weight:400; font-style:italic; }
+#anamika-portfolio .site-header { display:flex; align-items:center; justify-content:space-between; height:100px; border-bottom:1px solid var(--an-line); gap:28px; }
+#anamika-portfolio .monogram { display:inline-flex; align-items:center; gap:5px; font-size:37px; font-weight:700; line-height:1; letter-spacing:-3px; }
+#anamika-portfolio .monogram>span { font-weight:400; font-size:29px; color:var(--an-orange); transform:translateY(-8px); letter-spacing:0; }
+#anamika-portfolio .site-header nav { display:flex; gap:35px; margin-left:auto; margin-right:65px; font-size:14px; }
+#anamika-portfolio .site-header nav a { transition:color .2s; padding:10px 0; }
+#anamika-portfolio .site-header nav a:hover { color:var(--an-orange); }
+#anamika-portfolio .header-contact { display:flex; align-items:center; gap:40px; border:1px solid var(--an-line); border-radius:40px; padding:10px 21px; font-size:14px; transition:background .2s; }
+#anamika-portfolio .header-contact:hover { background:var(--an-cream); color:var(--an-black); }
+#anamika-portfolio .hero { display:grid; grid-template-columns:1.16fr 1fr; column-gap:72px; padding-top:68px; }
+#anamika-portfolio .hero-eyebrow { display:flex; align-items:center; gap:12px; color:var(--an-beige); }
+#anamika-portfolio .tiny-line { display:inline-block; width:25px; height:1px; background:var(--an-orange); }
+#anamika-portfolio .hero h1 { font-size:clamp(78px,8.3vw,126px); letter-spacing:-.073em; line-height:.94; font-weight:500; margin:28px 0 27px; }
+#anamika-portfolio .name-period { color:var(--an-orange); }
+#anamika-portfolio .hero-role { color:var(--an-orange); font-size:14px; font-weight:500; letter-spacing:-.025em; }
+#anamika-portfolio .hero-statement { margin-top:24px; max-width:580px; font-size:clamp(22px,2.03vw,31px); line-height:1.31; letter-spacing:-.034em; font-weight:400; }
+#anamika-portfolio .hero-description { margin-top:17px; color:var(--an-muted); max-width:495px; font-size:16px; line-height:1.75; }
+#anamika-portfolio .button-row { display:flex; align-items:center; flex-wrap:wrap; gap:25px; }
+#anamika-portfolio .hero .button-row { margin-top:30px; }
+#anamika-portfolio .action { display:inline-flex; justify-content:space-between; align-items:center; gap:32px; border:1px solid transparent; border-radius:3px; padding:15px 22px; min-height:53px; font-size:14px; font-weight:500; text-decoration:none; transition:transform .25s,background .25s; }
+#anamika-portfolio .action span { font-size:21px; line-height:1; }
+#anamika-portfolio .action:hover { transform:translateY(-3px); }
+#anamika-portfolio .action-orange { color:var(--an-black); background:var(--an-orange); }
+#anamika-portfolio .action-orange:hover { background:#ec966d; }
+#anamika-portfolio .action-dark { color:var(--an-cream); background:var(--an-black); }
+#anamika-portfolio .text-action { display:inline-flex; padding:12px 0; align-items:center; gap:16px; font-size:14px; min-height:44px; }
+#anamika-portfolio .text-action:hover { text-decoration:underline; text-underline-offset:6px; }
+#anamika-portfolio .portrait-composition { position:relative; padding-top:9px; margin-top:21px; align-self:start; min-width:0; }
+#anamika-portfolio .portrait-topline { display:flex; justify-content:space-between; gap:10px; font-size:12px; letter-spacing:.13em; color:var(--an-muted); margin-bottom:14px; }
+#anamika-portfolio .portrait-frame { background:#655e4e; position:relative; overflow:hidden; aspect-ratio: .88; }
+#anamika-portfolio .portrait { width:100%; height:100%; object-fit:cover; object-position:55% 50%; transition:transform 1s cubic-bezier(.2,.65,.3,1); }
+#anamika-portfolio .portrait-frame:hover .portrait { transform:scale(1.025); }
+#anamika-portfolio .portrait-composition figcaption { display:flex; justify-content:space-between; gap:14px; font-size:12px; padding:16px 0; color:var(--an-muted); border-bottom:1px solid var(--an-line); }
+#anamika-portfolio .portrait-note { position:absolute; bottom:80px; left:-29px; background:var(--an-cream); color:var(--an-black); padding:16px 24px 16px 19px; display:flex; align-items:center; gap:16px; font-size:14px; line-height:1.45; box-shadow:0 12px 30px #0003; transform:rotate(-4deg); }
+#anamika-portfolio .note-mark { font-size:44px; color:#ae512a; line-height:1; }
+#anamika-portfolio .hero-bottom { grid-column:1/-1; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--an-line); margin-top:62px; min-height:85px; font-size:12px; letter-spacing:.12em; }
+#anamika-portfolio .hero-bottom>a { display:flex; align-items:center; gap:22px; font-size:12px; letter-spacing:0; padding:12px 0; }
+#anamika-portfolio .hero-bottom>a span { font-size:23px; }
+#anamika-portfolio .light-section { background:var(--an-cream); color:var(--an-black); color-scheme:light; }
+#anamika-portfolio .section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:58px; }
+#anamika-portfolio .section-heading .eyebrow { margin-bottom:24px; }
+#anamika-portfolio .section-heading h2, #anamika-portfolio .experience-intro h2 { font-size:clamp(40px,4.7vw,70px); font-weight:400; line-height:1.07; letter-spacing:-.055em; }
+#anamika-portfolio .section-heading h2 .serif, #anamika-portfolio .experience-intro .serif { letter-spacing:-.035em; }
+#anamika-portfolio .section-heading>p { color:var(--an-muted); max-width:315px; font-size:16px; line-height:1.7; margin-bottom:4px; }
+#anamika-portfolio .light-section .section-heading>p { color:#646258; }
+#anamika-portfolio .project-grid { display:grid; grid-template-columns:1fr 1fr; column-gap:30px; row-gap:45px; }
+#anamika-portfolio .project-card { min-width:0; }
+#anamika-portfolio .project-art { position:relative; display:flex; flex-direction:column; justify-content:space-between; height:365px; padding:25px 30px 23px; overflow:hidden; isolation:isolate; transition:transform .35s,box-shadow .35s; }
+#anamika-portfolio .project-art:hover { transform:translateY(-5px); box-shadow:0 17px 25px #0001; }
+#anamika-portfolio .art-top, #anamika-portfolio .art-bottom { display:flex; justify-content:space-between; align-items:center; font-size:12px; font-weight:500; letter-spacing:.15em; z-index:1; }
+#anamika-portfolio .art-top>span:last-child { font-size:24px; line-height:1; }
+#anamika-portfolio .human-art { background:#d9ceba; color:#28271f; }
+#anamika-portfolio .human-type { font-size:83px; letter-spacing:-.065em; line-height:.91; position:relative; width:max-content; margin-left:25px; }
+#anamika-portfolio .human-type em { font-family:var(--an-serif); font-weight:400; }
+#anamika-portfolio .human-underline { display:block; width:90%; height:4px; background:#9f482a; transform:rotate(-3deg); margin-top:16px; }
+#anamika-portfolio .gtm-art { background:#a54e2e; color:#f8ebd5; }
+#anamika-portfolio .gtm-type { font-size:68px; line-height:.93; letter-spacing:-.06em; padding-left:20px; }
+#anamika-portfolio .gtm-type em { font-family:var(--an-serif); font-weight:400; }
+#anamika-portfolio .route-art { background:#535647; color:#f1e8d7; }
+#anamika-portfolio .route-type { font-family:var(--an-serif); font-size:72px; letter-spacing:-.04em; line-height:.95; padding-left:20px; z-index:1; }
+#anamika-portfolio .route-line { position:absolute; width:170px; height:390px; right:4%; top:50px; border:1px solid #e9e5ce33; border-radius:50%; transform:rotate(40deg); z-index:0; }
+#anamika-portfolio .trip-art { background:#282b2a; color:#e7e6dd; }
+#anamika-portfolio .trip-type { font-size:75px; line-height:1; letter-spacing:-.065em; align-self:center; font-weight:500; }
+#anamika-portfolio .trip-type>span { color:#aab89e; }
+#anamika-portfolio .trip-tag { font-size:12px; letter-spacing:.2em; font-weight:400; padding-top:22px; }
+#anamika-portfolio .project-information { display:flex; align-items:flex-end; justify-content:space-between; gap:15px; padding-top:20px; }
+#anamika-portfolio .project-category { font-size:12px; letter-spacing:.12em; font-weight:500; color:#6b675c; margin-bottom:5px; }
+#anamika-portfolio .project-information h3 { font-size:25px; line-height:1.35; font-weight:500; letter-spacing:-.04em; }
+#anamika-portfolio .project-links { display:flex; gap:18px; flex-wrap:wrap; padding-bottom:3px; }
+#anamika-portfolio .project-links a { font-size:12px; min-height:32px; display:flex; gap:6px; align-items:center; border-bottom:1px solid #7a756344; }
+#anamika-portfolio .project-links a:hover { color:#9b411f; border-color:#9b411f; }
+#anamika-portfolio .project-wide { grid-column:1/-1; }
+#anamika-portfolio .pipeline-art { display:flex; align-items:center; gap:32px; padding:30px 35px; border:1px solid #c9c3b4; transition:background .25s; }
+#anamika-portfolio .pipeline-art:hover { background:#e4ddcd; }
+#anamika-portfolio .pipeline-index { align-self:flex-start; font-family:var(--an-serif); font-size:25px; }
+#anamika-portfolio .pipeline-art h3 { font-size:40px; letter-spacing:-.05em; font-weight:500; line-height:1.3; }
+#anamika-portfolio .pipeline-art h3>span { color:#a34d2d; }
+#anamika-portfolio .pipeline-link { margin-left:auto; font-size:14px; }
+#anamika-portfolio .pipeline-link>span { font-size:24px; margin-left:30px; }
+#anamika-portfolio .strengths-grid { display:grid; grid-template-columns:repeat(4,1fr); margin-top:72px; border-top:1px solid var(--an-line); border-bottom:1px solid var(--an-line); }
+#anamika-portfolio .strength { padding:30px 25px 35px; border-right:1px solid var(--an-line); }
+#anamika-portfolio .strength:first-child { padding-left:0; }
+#anamika-portfolio .strength:last-child { padding-right:0; border:0; }
+#anamika-portfolio .strength-number { color:var(--an-orange); font-size:12px; }
+#anamika-portfolio .strength h3 { font-size:23px; font-weight:400; letter-spacing:-.035em; line-height:1.25; margin:26px 0 18px; }
+#anamika-portfolio .strength>p { color:var(--an-muted); font-size:15px; line-height:1.75; }
+#anamika-portfolio .skill-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:24px; }
+#anamika-portfolio .skill-tags>span { font-size:12px; border:1px solid #f1ecdf21; border-radius:3px; padding:4px 8px; color:#d8d5cc; }
+#anamika-portfolio .process { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:53px 0 63px; font-size:clamp(22px,3vw,40px); font-weight:400; letter-spacing:-.055em; }
+#anamika-portfolio .process>b { font-weight:400; font-size:23px; color:#817f75; }
+#anamika-portfolio .process-last { color:var(--an-orange); font-family:var(--an-serif); font-style:italic; }
+#anamika-portfolio .stack-section { margin-top:25px; padding-top:35px; border-top:1px solid var(--an-line); }
+#anamika-portfolio .stack-heading { display:flex; justify-content:space-between; gap:20px; align-items:center; margin-bottom:26px; }
+#anamika-portfolio .stack-heading>p:last-child { color:var(--an-muted); font-size:14px; }
+#anamika-portfolio .tool-grid { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--an-line); border-left:1px solid var(--an-line); }
+#anamika-portfolio .tool-item { min-width:0; min-height:105px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:9px; padding:15px 5px; border-right:1px solid var(--an-line); border-bottom:1px solid var(--an-line); transition:background .2s; }
+#anamika-portfolio .tool-item:hover { background:#f1ecdf07; }
+#anamika-portfolio .tool-item>span:last-child { font-size:12px; color:#c8c6bd; }
+#anamika-portfolio .tool-logo img { display:block; width:100%; height:100%; object-fit:contain; }
+#anamika-portfolio .tool-wordmark { height:24px; line-height:24px; font-weight:700; font-size:21px; letter-spacing:-1px; }
+#anamika-portfolio .aha-logo { font-style:italic; }
+#anamika-portfolio .ahrefs-logo { font-size:17px; letter-spacing:-.7px; }
+#anamika-portfolio .gamma-logo { font-weight:500; font-size:17px; letter-spacing:-1px; }
+#anamika-portfolio .sql-wordmark { font-family:monospace; font-size:16px; line-height:24px; }
+#anamika-portfolio .experience-layout { display:grid; grid-template-columns:.9fr 1.1fr; gap:100px; }
+#anamika-portfolio .experience-intro>.eyebrow { margin-bottom:25px; }
+#anamika-portfolio .experience-intro>p:not(.eyebrow) { max-width:360px; color:#69655c; font-size:16px; margin-top:28px; }
+#anamika-portfolio .experience-note { display:flex; gap:18px; align-items:center; border-top:1px solid #c9c3b4; margin-top:42px; padding-top:25px; max-width:360px; }
+#anamika-portfolio .experience-note>span { font-size:50px; line-height:1; }
+#anamika-portfolio .experience-note p { font-size:14px; }
+#anamika-portfolio .experience-note strong { font-weight:500; }
+#anamika-portfolio .timeline-item { position:relative; border-left:1px solid #cbc4b5; padding:0 0 35px 30px; }
+#anamika-portfolio .timeline-item:before { content:''; position:absolute; top:5px; left:-5px; width:9px; height:9px; border-radius:50%; border:1px solid #a65a38; background:var(--an-cream); }
+#anamika-portfolio .timeline-item:first-child:before { background:#b05a34; }
+#anamika-portfolio .timeline-item:last-child { padding-bottom:0; }
+#anamika-portfolio .timeline-date { font-size:12px; letter-spacing:.05em; font-weight:500; color:#7c4931; }
+#anamika-portfolio .timeline-date>span { display:inline-block; font-size:12px; color:#777166; margin-left:12px; }
+#anamika-portfolio .timeline-item h3 { font-size:26px; font-weight:500; letter-spacing:-.035em; margin-top:8px; line-height:1.25; }
+#anamika-portfolio .timeline-role { font-size:14px; margin-top:4px; }
+#anamika-portfolio .timeline-item>p:last-child { margin-top:9px; font-size:14px; line-height:1.7; color:#69655c; max-width:460px; }
+#anamika-portfolio .certificate-grid { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--an-line); }
+#anamika-portfolio .certificate { display:flex; flex-direction:column; padding:27px 25px 10px; border-right:1px solid var(--an-line); }
+#anamika-portfolio .certificate:first-child { padding-left:0; }
+#anamika-portfolio .certificate:last-child { border:0; padding-right:0; }
+#anamika-portfolio .cert-label { font-size:12px; letter-spacing:.1em; color:var(--an-orange); }
+#anamika-portfolio .certificate h3 { font-size:21px; font-weight:400; line-height:1.4; letter-spacing:-.025em; margin:18px 0 28px; }
+#anamika-portfolio .cert-issuer { margin-top:auto; font-size:12px; color:var(--an-muted); }
+#anamika-portfolio .contact-section { background:var(--an-orange); color:var(--an-black); padding:85px 0 70px; color-scheme:light; }
+#anamika-portfolio .contact-section h2 { font-size:clamp(40px,6.5vw,94px); line-height:1.06; font-weight:400; letter-spacing:-.058em; margin:32px 0 55px; }
+#anamika-portfolio .contact-section h2 .serif { letter-spacing:-.035em; }
+#anamika-portfolio .contact-bottom { border-top:1px solid #17171540; padding-top:32px; display:flex; gap:40px; align-items:center; flex-wrap:wrap; }
+#anamika-portfolio .contact-bottom .action { min-width:150px; }
+#anamika-portfolio .email-link { font-size:16px; border-bottom:1px solid #17171577; padding-block:10px; }
+#anamika-portfolio .social-links { display:flex; gap:24px; margin-left:auto; font-size:14px; }
+#anamika-portfolio .social-links a { padding-block:10px; }
+#anamika-portfolio .contact-section a:not(.action):hover { opacity:.72; }
+#anamika-portfolio .contact-section :where(a,button):focus-visible { outline-color:var(--an-black); }
+#anamika-portfolio .site-footer { display:flex; align-items:center; justify-content:space-between; gap:25px; min-height:110px; font-size:12px; color:var(--an-muted); }
+#anamika-portfolio .site-footer .monogram { color:var(--an-cream); }
+#anamika-portfolio .site-footer button, #anamika-portfolio .site-footer>a:last-child { font-size:12px; padding:12px 0; }
+#anamika-portfolio .site-footer button:hover { color:var(--an-orange); }
+#anamika-portfolio .skip-link { position:absolute; left:20px; top:-100px; z-index:100; background:var(--an-orange); color:#171715; padding:12px 20px; }
+#anamika-portfolio .skip-link:focus { top:10px; }
+#anamika-portfolio .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+
+/* Coffee: native dialogs provide keyboard trapping and modal semantics. */
+#anamika-portfolio dialog { color:var(--an-cream); font-family:var(--an-font); border:0; padding:0; }
+#anamika-portfolio .coffee-intro { background:var(--an-black); width:100%; max-width:none; height:100%; max-height:none; margin:0; overflow-y:auto; overflow-x:hidden; }
+#anamika-portfolio .coffee-intro::backdrop { background:var(--an-black); }
+#anamika-portfolio .intro-shell { position:relative; display:flex; flex-direction:column; min-height:100%; padding:0 4.5%; overflow:hidden; background-image:linear-gradient(90deg,transparent calc(25% - 1px),#f1ecdf05 25%,transparent calc(25% + 1px),transparent calc(75% - 1px),#f1ecdf05 75%,transparent calc(75% + 1px)); }
+#anamika-portfolio .intro-header { display:flex; justify-content:space-between; align-items:center; gap:25px; min-height:100px; flex-shrink:0; border-bottom:1px solid var(--an-line); position:relative; z-index:4; }
+#anamika-portfolio .intro-header>.eyebrow { color:#aaa69b; font-size:12px; }
+#anamika-portfolio .intro-skip { font-size:13px; display:flex; align-items:center; gap:13px; padding:12px 0; min-height:44px; }
+#anamika-portfolio .intro-question { text-align:center; margin:auto; padding:65px 0; position:relative; z-index:2; }
+#anamika-portfolio .intro-question>.eyebrow { color:var(--an-orange); }
+#anamika-portfolio .intro-question h2 { font-size:clamp(45px,6.4vw,88px); line-height:1.05; letter-spacing:-.05em; font-weight:400; margin:28px 0 20px; }
+#anamika-portfolio .intro-question h2 em, #anamika-portfolio .coffee-serve h2 em { font-family:var(--an-serif); font-weight:400; color:var(--an-orange); }
+#anamika-portfolio .intro-question>p:not(.eyebrow) { font-size:15px; color:var(--an-muted); }
+#anamika-portfolio .intro-question .button-row { justify-content:center; margin-top:34px; }
+#anamika-portfolio .intro-footer { display:flex; justify-content:space-between; padding:23px 0; font-size:12px; letter-spacing:.13em; border-top:1px solid var(--an-line); gap:25px; flex-shrink:0; }
+#anamika-portfolio .coffee-serve { display:flex; flex-direction:column; align-items:center; margin:auto; padding:34px 0 26px; width:100%; position:relative; z-index:2; text-align:center; }
+#anamika-portfolio .coffee-serve>.eyebrow { color:var(--an-muted); font-size:12px; }
+#anamika-portfolio .coffee-serve h2 { font-size:clamp(32px,4vw,52px); font-weight:400; line-height:1.1; letter-spacing:-.04em; margin-top:15px; }
+#anamika-portfolio .coffee-cup-button { position:relative; display:block; width:min(380px,65vw); padding:0; margin:-6px 0 -2px; transform-origin:55% 72%; animation:cup-enter 1s cubic-bezier(.2,.85,.2,1) both; }
+#anamika-portfolio .coffee-image { width:100%; height:auto; filter:drop-shadow(0 20px 20px #0007); }
+#anamika-portfolio .coffee-cup-button:hover { filter:brightness(1.05); }
+#anamika-portfolio .cup-instruction { font-size:12px; letter-spacing:.13em; color:var(--an-muted); }
+#anamika-portfolio .cup-instruction>span { color:var(--an-orange); margin-left:12px; }
+#anamika-portfolio .steam { position:absolute; pointer-events:none; bottom:70%; left:40%; height:120px; width:18px; border-radius:50%; background:linear-gradient(0deg,#efe9d42b,transparent); filter:blur(9px); animation:steam-rise 3.5s ease-out infinite; opacity:0; transform:rotate(-10deg); }
+#anamika-portfolio .steam-two { left:53%; height:100px; animation-delay:1.1s; }
+#anamika-portfolio .steam-three { left:45%; height:90px; animation-delay:2.2s; }
+#anamika-portfolio .coffee-cup-button.is-spilling { animation:cup-tilt 1.4s cubic-bezier(.26,.1,.2,1) forwards; pointer-events:none; }
+#anamika-portfolio .is-spilling .steam { display:none; }
+#anamika-portfolio #coffee-liquid { position:absolute; inset:0; width:100%; height:100%; z-index:3; pointer-events:none; }
+#anamika-portfolio .coffee-intro.is-revealing { animation:intro-reveal .8s cubic-bezier(.4,0,.2,1) forwards; }
+#anamika-portfolio .coffee-message { width:min(610px,calc(100% - 36px)); max-width:none; max-height:calc(100% - 40px); margin:auto; background:var(--an-cream); color:var(--an-black); border:1px solid #a29883; border-radius:4px; }
+#anamika-portfolio .coffee-message::backdrop { background:#11110fa8; backdrop-filter:blur(7px); }
+#anamika-portfolio .coffee-message[open] { animation:popup-enter .45s cubic-bezier(.2,.8,.2,1) both; }
+#anamika-portfolio .spill-popup { padding:55px 45px 45px; position:relative; }
+#anamika-portfolio .close-popup { position:absolute; top:10px; right:12px; font-size:30px; width:44px; height:44px; }
+#anamika-portfolio .spill-popup>.eyebrow { color:#984421; font-size:12px; }
+#anamika-portfolio .spill-popup h2 { font-size:56px; line-height:1.05; font-weight:400; letter-spacing:-.04em; margin:20px 0; }
+#anamika-portfolio .spill-popup h2 em { font-family:var(--an-serif); font-weight:400; color:#a14a28; }
+#anamika-portfolio .spill-popup>p:not(.eyebrow) { color:#656054; max-width:370px; font-size:16px; }
+#anamika-portfolio .spill-popup .button-row { margin-top:27px; gap:17px; }
+#anamika-portfolio .spill-popup .text-action { font-size:13px; gap:10px; }
+@keyframes cup-enter { from { opacity:0; transform:translateY(40px) scale(.83) rotate(-5deg); } to { opacity:1; transform:translateY(0) scale(1) rotate(0); } }
+@keyframes steam-rise { 0% { opacity:0; transform:translate(0,20px) scaleX(.6) rotate(-10deg); } 35% { opacity:.6; } 100% { opacity:0; transform:translate(-22px,-65px) scaleX(2) rotate(20deg); } }
+@keyframes cup-tilt { 0% { transform:rotate(0); } 45% { transform:translate(-9px,-7px) rotate(-42deg); } 75% { transform:translate(-15px,-7px) rotate(-58deg); opacity:1; } 100% { transform:translate(-18px,12px) rotate(-53deg); opacity:.4; } }
+@keyframes intro-reveal { from { clip-path:inset(0 0 0 0); } to { clip-path:inset(0 0 100% 0); } }
+@keyframes popup-enter { from { opacity:0; transform:translateY(20px) scale(.98); } to { opacity:1; transform:none; } }
+
+@media (min-width:1500px) { #anamika-portfolio .hero { column-gap:95px; } #anamika-portfolio .hero-copy { padding-top:15px; } }
+@media (max-width:1100px) {
+  #anamika-portfolio .wrap { width:calc(100% - 72px); }
+  #anamika-portfolio .hero { column-gap:40px; padding-top:52px; }
+  #anamika-portfolio .hero h1 { font-size:92px; }
+  #anamika-portfolio .hero-role { font-size:12px; }
+  #anamika-portfolio .hero-statement { font-size:24px; }
+  #anamika-portfolio .portrait-composition { margin-top:35px; }
+  #anamika-portfolio .portrait-frame { aspect-ratio:.72; }
+  #anamika-portfolio .portrait { object-position:59% 50%; }
+  #anamika-portfolio .portrait-note { left:-15px; bottom:75px; padding:13px 17px; }
+  #anamika-portfolio .section-pad { padding-block:90px; }
+  #anamika-portfolio .project-art { height:320px; padding:23px; }
+  #anamika-portfolio .project-information { align-items:flex-start; flex-direction:column; gap:5px; }
+  #anamika-portfolio .strengths-grid { grid-template-columns:1fr 1fr; }
+  #anamika-portfolio .strength:nth-child(2) { border-right:0; }
+  #anamika-portfolio .strength:nth-child(3) { padding-left:0; }
+  #anamika-portfolio .strength:nth-child(-n+2) { border-bottom:1px solid var(--an-line); }
+  #anamika-portfolio .strength:last-child { padding-left:25px; }
+  #anamika-portfolio .tool-grid { grid-template-columns:repeat(4,1fr); }
+  #anamika-portfolio .experience-layout { gap:60px; }
+  #anamika-portfolio .experience-intro h2 { font-size:47px; }
+  #anamika-portfolio .certificate h3 { font-size:19px; }
+  #anamika-portfolio .certificate { padding-inline:18px; }
+  #anamika-portfolio .contact-bottom { gap:24px; }
+  #anamika-portfolio .social-links { margin-left:0; }
+}
+@media (max-width:760px) {
+  #anamika-portfolio .wrap { width:calc(100% - 40px); }
+  #anamika-portfolio .site-header { height:80px; gap:15px; }
+  #anamika-portfolio .site-header nav { gap:22px; margin:0 0 0 auto; }
+  #anamika-portfolio .site-header nav>a:not(:first-child) { display:none; }
+  #anamika-portfolio .header-contact { padding:8px 16px; gap:18px; font-size:13px; }
+  #anamika-portfolio .monogram { font-size:33px; }
+  #anamika-portfolio .hero { grid-template-columns:1fr; padding-top:40px; }
+  #anamika-portfolio .hero h1 { font-size:clamp(82px,17.5vw,118px); margin-block:25px; }
+  #anamika-portfolio .hero-role { font-size:13px; max-width:100%; line-height:1.7; }
+  #anamika-portfolio .hero-statement { font-size:27px; margin-top:23px; max-width:600px; }
+  #anamika-portfolio .hero-description { font-size:16px; margin-top:18px; }
+  #anamika-portfolio .portrait-composition { margin:46px 0 0; }
+  #anamika-portfolio .portrait-frame { aspect-ratio:.99; }
+  #anamika-portfolio .portrait { object-position:50% 44%; }
+  #anamika-portfolio .portrait-note { left:12px; bottom:72px; }
+  #anamika-portfolio .portrait-topline { font-size:12px; }
+  #anamika-portfolio .hero-bottom { margin-top:32px; min-height:78px; }
+  #anamika-portfolio .hero-bottom>span { max-width:140px; font-size:12px; }
+  #anamika-portfolio .hero-bottom>a { font-size:12px; gap:13px; }
+  #anamika-portfolio .section-pad { padding-block:68px; }
+  #anamika-portfolio .section-heading { align-items:flex-start; flex-direction:column; gap:22px; margin-bottom:34px; }
+  #anamika-portfolio .section-heading h2, #anamika-portfolio .experience-intro h2 { font-size:clamp(42px,9vw,62px); }
+  #anamika-portfolio .section-heading .eyebrow { margin-bottom:19px; }
+  #anamika-portfolio .section-heading>p { font-size:15px; }
+  #anamika-portfolio .project-grid { grid-template-columns:1fr; row-gap:35px; }
+  #anamika-portfolio .project-art { height:330px; }
+  #anamika-portfolio .project-information { gap:8px; }
+  #anamika-portfolio .project-information h3 { font-size:26px; }
+  #anamika-portfolio .project-links { gap:25px; }
+  #anamika-portfolio .project-links a { min-height:44px; font-size:13px; }
+  #anamika-portfolio .pipeline-art { padding:24px 19px; gap:15px; flex-wrap:wrap; }
+  #anamika-portfolio .pipeline-art h3 { font-size:32px; }
+  #anamika-portfolio .pipeline-link { width:100%; margin-left:47px; }
+  #anamika-portfolio .strengths-grid { margin-top:40px; }
+  #anamika-portfolio .strength { padding:23px 15px 28px; }
+  #anamika-portfolio .strength:last-child { padding-left:15px; }
+  #anamika-portfolio .strength h3 { font-size:22px; margin-top:18px; }
+  #anamika-portfolio .strength>p { font-size:14px; }
+  #anamika-portfolio .skill-tags { gap:6px; }
+  #anamika-portfolio .skill-tags>span { padding:4px 6px; font-size:12px; }
+  #anamika-portfolio .process { flex-wrap:wrap; justify-content:flex-start; gap:13px; padding:35px 0; font-size:26px; }
+  #anamika-portfolio .process>b { font-size:17px; }
+  #anamika-portfolio .stack-heading { align-items:flex-start; flex-direction:column; gap:7px; }
+  #anamika-portfolio .tool-grid { grid-template-columns:repeat(4,1fr); }
+  #anamika-portfolio .tool-item { min-height:95px; }
+  #anamika-portfolio .tool-item>span:last-child { font-size:12px; }
+  #anamika-portfolio .experience-layout { grid-template-columns:1fr; gap:44px; }
+  #anamika-portfolio .experience-intro>p:not(.eyebrow) { max-width:100%; }
+  #anamika-portfolio .experience-note { display:none; }
+  #anamika-portfolio .timeline { margin-left:5px; }
+  #anamika-portfolio .timeline-item { padding-left:23px; }
+  #anamika-portfolio .timeline-date { font-size:12px; }
+  #anamika-portfolio .timeline-date>span { font-size:12px; margin-left:8px; }
+  #anamika-portfolio .certificate-grid { grid-template-columns:1fr 1fr; }
+  #anamika-portfolio .certificate { padding:23px 15px 26px; }
+  #anamika-portfolio .certificate:nth-child(2) { border-right:0; }
+  #anamika-portfolio .certificate:nth-child(3) { padding-left:0; }
+  #anamika-portfolio .certificate:nth-child(-n+2) { border-bottom:1px solid var(--an-line); }
+  #anamika-portfolio .certificate h3 { font-size:19px; }
+  #anamika-portfolio .cert-label { font-size:12px; }
+  #anamika-portfolio .cert-issuer { font-size:12px; }
+  #anamika-portfolio .contact-section { padding-block:61px 45px; }
+  #anamika-portfolio .contact-section h2 { font-size:clamp(39px,8.7vw,64px); margin-bottom:34px; }
+  #anamika-portfolio .contact-section .eyebrow { font-size:12px; }
+  #anamika-portfolio .contact-bottom { flex-direction:column; align-items:flex-start; gap:21px; }
+  #anamika-portfolio .email-link { font-size:15px; overflow-wrap:anywhere; }
+  #anamika-portfolio .site-footer { flex-wrap:wrap; padding-block:30px; justify-content:space-between; gap:25px 16px; }
+  #anamika-portfolio .site-footer>span { flex-basis:calc(100% - 85px); text-align:right; }
+  #anamika-portfolio .intro-header { min-height:80px; }
+  #anamika-portfolio .intro-header>.eyebrow { display:none; }
+  #anamika-portfolio .intro-shell { padding-inline:6%; }
+  #anamika-portfolio .intro-question { padding-block:60px; }
+  #anamika-portfolio .intro-question h2 { font-size:clamp(39px,8.7vw,65px); }
+  #anamika-portfolio .intro-question .button-row { flex-direction:column; gap:10px; }
+  #anamika-portfolio .intro-question>.eyebrow { font-size:12px; }
+  #anamika-portfolio .intro-footer { font-size:12px; }
+  #anamika-portfolio .intro-footer>span { max-width:140px; }
+  #anamika-portfolio .intro-footer>span:last-child { text-align:right; }
+  #anamika-portfolio .coffee-serve { padding-block:30px; }
+  #anamika-portfolio .coffee-cup-button { width:min(335px,80vw); margin-block:4px; }
+  #anamika-portfolio .coffee-serve h2 { font-size:36px; }
+  #anamika-portfolio .spill-popup { padding:47px 25px 30px; }
+  #anamika-portfolio .spill-popup h2 { font-size:45px; }
+  #anamika-portfolio .spill-popup .button-row { flex-direction:column; align-items:flex-start; gap:10px; }
+}
+@media (max-width:380px) { #anamika-portfolio .hero-statement { font-size:24px; } #anamika-portfolio .hero-role { font-size:12px; } #anamika-portfolio .strengths-grid { grid-template-columns:1fr; } #anamika-portfolio .strength, #anamika-portfolio .strength:last-child { border-right:0; border-bottom:1px solid var(--an-line); padding-inline:0; } #anamika-portfolio .project-art { height:290px; padding:21px; } #anamika-portfolio .human-type { font-size:70px; margin-left:5px; } #anamika-portfolio .gtm-type { font-size:63px; } #anamika-portfolio .route-type { font-size:62px; } #anamika-portfolio .trip-type { font-size:60px; } #anamika-portfolio .contact-section h2 { font-size:36px; } #anamika-portfolio .button-row { gap:17px; } }
+@media (max-height:700px) and (min-width:761px) { #anamika-portfolio .intro-header { min-height:76px; } #anamika-portfolio .intro-question { padding-block:30px; } #anamika-portfolio .intro-question h2 { font-size:60px; } #anamika-portfolio .coffee-cup-button { width:285px; } #anamika-portfolio .coffee-serve { padding-block:20px; } #anamika-portfolio .coffee-serve h2 { font-size:39px; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } #anamika-portfolio *,#anamika-portfolio *:before,#anamika-portfolio *:after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } #anamika-portfolio .steam { display:none; } }
+
+/* Expanded tool stack. */
+#anamika-portfolio .tool-categories { display:grid; grid-template-columns:1fr 1fr; gap:32px 28px; }
+#anamika-portfolio .tool-category { min-width:0; }
+#anamika-portfolio .tool-category h3 { color:var(--an-beige); font-size:14px; font-weight:500; letter-spacing:.01em; margin-bottom:15px; }
+#anamika-portfolio .tool-logo { width:58px; height:40px; display:flex; align-items:center; justify-content:center; padding:6px; background:#fff; border-radius:5px; overflow:hidden; }
+#anamika-portfolio .tool-logo .sql-wordmark { color:var(--an-black); }
+@media(max-width:760px) { #anamika-portfolio .tool-categories { grid-template-columns:1fr; gap:28px; } }
+@media(max-width:480px) { #anamika-portfolio .tool-grid { grid-template-columns:repeat(3,1fr); } }
+
+#anamika-portfolio .tool-logo .logo-gong { transform:scale(2); }
+
+/* Product case challenges. */
+#anamika-portfolio .case-challenges { margin-top:82px; padding-top:72px; border-top:1px solid #c9c3b4; scroll-margin-top:35px; }
+#anamika-portfolio .case-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:25px; }
+#anamika-portfolio .case-card { display:flex; flex-direction:column; min-width:0; padding:28px 30px 0; border:1px solid #ccc4b5; background:#ece5d7; transition:background .25s,transform .25s,border-color .25s; }
+#anamika-portfolio .case-card:hover { background:#e7decd; border-color:#aa967c; transform:translateY(-3px); }
+#anamika-portfolio .case-card-top { display:flex; justify-content:space-between; align-items:center; gap:18px; margin-bottom:23px; }
+#anamika-portfolio .case-brand { color:#964423; font-size:14px; font-weight:600; letter-spacing:.025em; }
+#anamika-portfolio .case-index { color:#777065; font-size:12px; letter-spacing:.06em; }
+#anamika-portfolio .case-card h3 { color:var(--an-black); font-size:clamp(25px,2.5vw,34px); font-weight:500; letter-spacing:-.04em; line-height:1.2; margin-bottom:16px; }
+#anamika-portfolio .case-description { font-size:16px; line-height:1.7; color:#625c51; }
+#anamika-portfolio .case-category { color:#6f5d4b; font-size:12px; letter-spacing:.015em; margin-top:24px; margin-bottom:20px; }
+#anamika-portfolio .case-view { display:flex; align-items:center; justify-content:space-between; gap:14px; margin-top:auto; padding:17px 0; min-height:58px; border-top:1px solid #c9beac; font-size:14px; font-weight:500; }
+#anamika-portfolio .case-view>span:last-child { font-size:23px; transition:transform .2s; }
+#anamika-portfolio .case-view:hover>span:last-child { transform:translate(3px,-3px); }
+#anamika-portfolio .case-format { color:#756a5b; font-size:12px; margin-left:9px; font-weight:400; }
+@media(max-width:760px) { #anamika-portfolio .case-challenges { margin-top:56px; padding-top:49px; } #anamika-portfolio .case-grid { grid-template-columns:1fr; gap:20px; } #anamika-portfolio .case-card { padding:25px 22px 0; } #anamika-portfolio .case-card h3 { font-size:29px; } }
+@media(prefers-reduced-motion:reduce) { #anamika-portfolio .case-card:hover,#anamika-portfolio .case-view:hover>span:last-child { transform:none; } }
+
+/* Document viewer; portfolio layout and styling are unchanged. */
+#anamika-portfolio #document-viewer { width:min(1440px,calc(100% - 24px)); height:calc(100dvh - 24px); max-width:none; max-height:none; margin:auto; padding:0; border:1px solid #48453e; border-radius:7px; background:#24231f; color:#f1ecdf; overflow:hidden; }
+#anamika-portfolio #document-viewer::backdrop { background:#000c; backdrop-filter:blur(6px); }
+#anamika-portfolio #document-viewer:fullscreen { width:100%; height:100%; border:0; border-radius:0; }
+#anamika-portfolio .document-shell { height:100%; display:flex; flex-direction:column; }
+#anamika-portfolio .document-toolbar { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:13px 20px; border-bottom:1px solid #48453e; flex-shrink:0; }
+#anamika-portfolio #document-viewer-title { font-size:17px; font-weight:500; line-height:1.4; }
+#anamika-portfolio .document-controls { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px 20px; padding:8px 20px; background:#1b1b18; flex-shrink:0; }
+#anamika-portfolio .document-paging,#anamika-portfolio .document-zoom { display:flex; align-items:center; gap:8px; }
+#anamika-portfolio #document-viewer button { min-height:44px; min-width:44px; padding:7px 12px; border:1px solid #5c584e; border-radius:4px; background:transparent; color:#f1ecdf; font-size:14px; line-height:1.4; white-space:nowrap; }
+#anamika-portfolio #document-viewer button:hover:not(:disabled) { background:#444035; }
+#anamika-portfolio #document-viewer button:disabled { opacity:.4; cursor:default; }
+#anamika-portfolio #document-position { min-width:64px; text-align:center; font-size:14px; font-variant-numeric:tabular-nums; }
+#anamika-portfolio #document-stage { position:relative; flex:1; min-height:0; padding:18px; overflow:auto; overscroll-behavior:contain; background:#373631; }
+#anamika-portfolio #document-page { width:max-content; margin:auto; }
+#anamika-portfolio #document-canvas { display:block; max-width:none; box-shadow:0 4px 24px #0005; }
+#anamika-portfolio #document-status { text-align:center; padding:50px 12px; color:#e3ddcf; }
+#anamika-portfolio #document-error { padding:20px; background:#38271d; font-size:15px; }
+#anamika-portfolio #document-error a { color:#f1c08b; text-decoration:underline; }
+#anamika-portfolio #document-accessible-text { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+#anamika-portfolio #document-viewer [hidden] { display:none!important; }
+@media(max-width:600px) { #anamika-portfolio #document-viewer { width:100%; height:100dvh; border:0; border-radius:0; } #anamika-portfolio .document-toolbar { padding:10px 12px; gap:12px; } #anamika-portfolio #document-viewer-title { font-size:15px; } #anamika-portfolio .document-controls { padding:8px; gap:8px; } #anamika-portfolio #document-fullscreen { font-size:12px; padding-inline:8px; } #anamika-portfolio #document-stage { padding:10px; } }
+
+/* Professional profile and client work. */
+#anamika-portfolio .brand-name { display:inline-block; font-size:16px; font-weight:600; letter-spacing:.10em; line-height:1.4; white-space:nowrap; color:var(--an-cream); }
+#anamika-portfolio .hero h1 { font-size:clamp(70px,7vw,106px); letter-spacing:-.06em; line-height:.99; }
+#anamika-portfolio .hero-role { line-height:1.8; max-width:100%; }
+#anamika-portfolio .profile-summary { padding:72px 0 66px; display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; border-top:1px solid var(--an-line); }
+#anamika-portfolio .summary-label .eyebrow { color:var(--an-orange); margin-bottom:21px; }
+#anamika-portfolio .summary-label h2 { font-size:clamp(29px,3.1vw,43px); font-weight:400; line-height:1.15; letter-spacing:-.035em; }
+#anamika-portfolio .summary-copy p { font-size:17px; line-height:1.85; color:var(--an-muted); }
+#anamika-portfolio .summary-copy p+p { margin-top:18px; }
+#anamika-portfolio .summary-copy strong { color:var(--an-cream); font-weight:500; }
+#anamika-portfolio .clients-section { padding:0 0 80px; }
+#anamika-portfolio .client-section-heading { margin-bottom:28px; }
+#anamika-portfolio .client-section-heading .eyebrow { color:var(--an-muted); font-size:12px; margin-bottom:13px; }
+#anamika-portfolio .client-section-heading h2 { font-size:28px; font-weight:400; letter-spacing:-.03em; line-height:1.3; }
+#anamika-portfolio .clients-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+#anamika-portfolio .client-tile { min-width:0; }
+#anamika-portfolio .client-logo-surface { display:flex; align-items:center; justify-content:center; height:136px; background:#fff; padding:23px; border:1px solid #fff; }
+#anamika-portfolio .client-logo-surface img { width:100%; height:84px; object-fit:contain; }
+#anamika-portfolio .client-logo-surface .client-monochrome { filter:brightness(0); }
+#anamika-portfolio .client-tile figcaption { padding:10px 0 5px; color:var(--an-muted); font-size:12px; text-align:center; }
+#anamika-portfolio .case-logo-surface { display:flex; align-items:center; justify-content:center; width:172px; height:76px; background:#fff; padding:13px 17px; }
+#anamika-portfolio .case-logo-surface img { display:block; width:100%; height:100%; object-fit:contain; }
+#anamika-portfolio .experience-points { margin:14px 0 0; padding-left:17px; color:#625c51; }
+#anamika-portfolio .experience-points li { font-size:14px; line-height:1.8; padding-left:4px; margin-bottom:10px; }
+#anamika-portfolio .experience-points li::marker { color:#a6502c; }
+#anamika-portfolio .experience-points strong { color:#373329; font-weight:600; }
+#anamika-portfolio .timeline-item { padding-bottom:37px; }
+#anamika-portfolio .direct-contact { display:flex; flex-direction:column; gap:10px; }
+#anamika-portfolio .phone-link { font-size:16px; display:flex; gap:17px; align-items:center; min-height:36px; }
+#anamika-portfolio .social-links { flex-direction:column; gap:5px; font-size:13px; overflow-wrap:anywhere; }
+#anamika-portfolio .social-links a { padding-block:8px; }
+#anamika-portfolio .site-footer { flex-wrap:wrap; }
+#anamika-portfolio .site-footer .brand-name { font-size:13px; }
+@media(max-width:1100px) { #anamika-portfolio .profile-summary { gap:42px; } #anamika-portfolio .clients-grid { gap:14px; } #anamika-portfolio .client-logo-surface { height:116px; padding:19px; } }
+@media(max-width:760px) { #anamika-portfolio .brand-name { font-size:14px; letter-spacing:.06em; } #anamika-portfolio .hero h1 { font-size:clamp(51px,12vw,88px); } #anamika-portfolio .profile-summary { grid-template-columns:1fr; gap:25px; padding-block:46px; } #anamika-portfolio .summary-copy p { font-size:16px; } #anamika-portfolio .clients-section { padding-bottom:55px; } #anamika-portfolio .clients-grid { grid-template-columns:1fr 1fr; } #anamika-portfolio .client-logo-surface { height:110px; padding:15px; } #anamika-portfolio .client-logo-surface img { height:78px; } #anamika-portfolio .client-section-heading h2 { font-size:25px; } #anamika-portfolio .site-footer>span { flex-basis:auto; } }
+@media(max-width:480px) { #anamika-portfolio .site-header nav { display:none; } #anamika-portfolio .case-logo-surface { width:150px; height:68px; } #anamika-portfolio .client-logo-surface { padding:12px; height:100px; } #anamika-portfolio .client-tile figcaption { font-size:12px; } }

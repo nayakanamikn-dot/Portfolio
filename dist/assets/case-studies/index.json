@@ -1,0 +1,74 @@
+[
+  {
+    "brand": "Netflix",
+    "title": "Choose Together",
+    "category": "Discovery · Shared decisions",
+    "description": "A shared, three-film shortlist helps two adults agree on what to watch. The proposal tests faster, mutually accepted starts while protecting each viewer’s preferences.",
+    "source": "Netflix_PM_Case_Study(1).pptx",
+    "filename": "netflix-choose-together.pptx",
+    "view_url": "assets/case-studies/netflix-choose-together.pdf",
+    "page_count": 10,
+    "browser_data_url": "assets/case-studies/netflix-choose-together.js",
+    "view_format": "PDF export of original PowerPoint slides"
+  },
+  {
+    "brand": "Airbnb",
+    "title": "Long-Stay Confidence",
+    "category": "Marketplace · Trust",
+    "description": "A Long-stay brief brings work setup, payment timing, and cancellation exposure into one decision. The proposal tests better guest matches while protecting host earnings.",
+    "source": "Airbnb_Long_Stay_Case_Study(1).pptx",
+    "filename": "airbnb-long-stay-confidence.pptx",
+    "view_url": "assets/case-studies/airbnb-long-stay-confidence.pdf",
+    "page_count": 10,
+    "browser_data_url": "assets/case-studies/airbnb-long-stay-confidence.js",
+    "view_format": "PDF export of original PowerPoint slides"
+  },
+  {
+    "brand": "Uber",
+    "title": "A Calmer Pickup",
+    "category": "Rider experience · Operations",
+    "description": "Meetpoint gives riders and drivers a shared plan from terminal exit to car. The proposal pairs clear pickup guidance with readiness signals and airport-specific recovery.",
+    "source": "Uber_Airport_Pickup_PM_Case_Study_Final (1).pptx",
+    "filename": "uber-calmer-airport-pickups.pptx",
+    "view_url": "assets/case-studies/uber-calmer-airport-pickups.pdf",
+    "page_count": 10,
+    "browser_data_url": "assets/case-studies/uber-calmer-airport-pickups.js",
+    "view_format": "PDF export of original PowerPoint slides"
+  },
+  {
+    "brand": "LodgIQ",
+    "title": "Signals That Matter",
+    "category": "B2B SaaS · Product adoption",
+    "description": "A proposed RMS dashboard separates successful pricing work from apparent inactivity. It prioritizes evidence-backed interventions while keeping customer trust concerns visible.",
+    "source": "ANAMIKA NAYAK - LODGIC CASE CHALLENGE.pdf",
+    "filename": "lodgiq-signals-that-matter.pdf",
+    "view_url": "assets/case-studies/lodgiq-signals-that-matter.pdf",
+    "page_count": 8,
+    "browser_data_url": "assets/case-studies/lodgiq-signals-that-matter.js",
+    "view_format": "Original PDF"
+  },
+  {
+    "brand": "Spotify India",
+    "title": "Premium, Proven First",
+    "category": "Growth · Monetization",
+    "description": "A proposed Premium Session lets free listeners feel the value before paying. Small UPI passes create a prepaid upgrade path, measured by retained contribution margin.",
+    "source": "Product Case Study- Spotify India -Anamika Nayak.pdf",
+    "filename": "spotify-india-premium-proven-first.pdf",
+    "view_url": "assets/case-studies/spotify-india-premium-proven-first.pdf",
+    "page_count": 3,
+    "browser_data_url": "assets/case-studies/spotify-india-premium-proven-first.js",
+    "view_format": "Original PDF"
+  },
+  {
+    "brand": "Third Wave Coffee",
+    "title": "Coin Clarity",
+    "category": "Loyalty · Retention",
+    "description": "Coin Clarity makes usable balance, eligibility, and expiry clear before payment. The proposal aims to improve confident redemption while preserving existing reward rules.",
+    "source": "third-wave-coins-case-study.pdf",
+    "filename": "third-wave-coffee-coin-clarity.pdf",
+    "view_url": "assets/case-studies/third-wave-coffee-coin-clarity.pdf",
+    "page_count": 10,
+    "browser_data_url": "assets/case-studies/third-wave-coffee-coin-clarity.js",
+    "view_format": "Original PDF"
+  }
+]

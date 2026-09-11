@@ -1,0 +1,196 @@
+{
+  "jira": {
+    "file": "jira.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "jira"
+  },
+  "linear": {
+    "file": "linear.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "linear-icon"
+  },
+  "asana": {
+    "file": "asana.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "asana-icon"
+  },
+  "productboard": {
+    "file": "productboard.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "productboard-icon"
+  },
+  "aha": {
+    "file": "aha.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "aha"
+  },
+  "notion": {
+    "file": "notion.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "notion-icon"
+  },
+  "confluence": {
+    "file": "confluence.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "confluence"
+  },
+  "figma": {
+    "file": "figma.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "figma"
+  },
+  "amplitude": {
+    "file": "amplitude.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "amplitude-icon"
+  },
+  "mixpanel": {
+    "file": "mixpanel.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "mixpanel"
+  },
+  "posthog": {
+    "file": "posthog.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "posthog-icon"
+  },
+  "dovetail": {
+    "file": "dovetail.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "dovetail-icon"
+  },
+  "intercom": {
+    "file": "intercom.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "intercom-icon"
+  },
+  "zendesk": {
+    "file": "zendesk.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "zendesk-icon"
+  },
+  "salesforce": {
+    "file": "salesforce.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "salesforce"
+  },
+  "slack": {
+    "file": "slack.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "slack-icon"
+  },
+  "loom": {
+    "file": "loom.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "loom-icon"
+  },
+  "looker": {
+    "file": "looker.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "looker-icon"
+  },
+  "metabase": {
+    "file": "metabase.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "metabase"
+  },
+  "tableau": {
+    "file": "tableau.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "tableau-icon"
+  },
+  "optimizely": {
+    "file": "optimizely.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "optimizely-icon"
+  },
+  "launchdarkly": {
+    "file": "launchdarkly.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "launchdarkly-icon"
+  },
+  "github": {
+    "file": "github.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "github-icon"
+  },
+  "supabase": {
+    "file": "supabase.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "supabase-icon"
+  },
+  "vercel": {
+    "file": "vercel.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "vercel-icon"
+  },
+  "webflow": {
+    "file": "webflow.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "webflow"
+  },
+  "hubspot": {
+    "file": "hubspot.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "hubspot"
+  },
+  "python": {
+    "file": "python.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "python"
+  },
+  "googleanalytics": {
+    "file": "googleanalytics.svg",
+    "source": "https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.10/icons.json",
+    "catalog_key": "google-analytics"
+  },
+  "googledocs": {
+    "file": "googledocs.svg",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@14.11.0/icons/googledocs.svg"
+  },
+  "maze": {
+    "file": "maze.svg",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@14.11.0/icons/maze.svg"
+  },
+  "canva": {
+    "file": "canva.svg",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@14.11.0/icons/canva.svg"
+  },
+  "n8n": {
+    "file": "n8n.svg",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@14.11.0/icons/n8n.svg"
+  },
+  "semrush": {
+    "file": "semrush.svg",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@14.11.0/icons/semrush.svg"
+  },
+  "usertesting": {
+    "file": "usertesting.webp",
+    "source": "https://www.usertesting.com/themes/custom/usertesting/favicon.ico"
+  },
+  "statsig": {
+    "file": "statsig.svg",
+    "source": "https://www.statsig.com/images/favicons/favicon.svg"
+  },
+  "ahrefs": {
+    "file": "ahrefs.svg",
+    "source": "https://static.ahrefs.com/favicon.svg?v=2"
+  },
+  "gamma": {
+    "file": "gamma.webp",
+    "source": "https://meetgamma.canny.io/changelog/more-icons-more-fun",
+    "image_url": "https://canny-assets.io/icons/ded4694e2732f5828a799fb321642e99.png",
+    "bytes": 92792
+  },
+  "gong": {
+    "file": "gong.webp",
+    "source": "https://zeeg.me/en/blog/post/ai-sales-agents",
+    "image_url": "https://cdn.prod.website-files.com/6482fc3c808f4e9db58cda1d/6903538958fe1f53e404ae0a_gong.webp",
+    "bytes": 14248
+  },
+  "figjam": {
+    "file": "figjam.png",
+    "source": "https://www.softwareadvice.ie/software/420080/figjam",
+    "image_url": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/39d3008e-e967-4f0c-bf33-d9c5366d1a38.png?auto=format&dpr=3&fit=max&h=128&q=50&w=128"
+  }
+}
